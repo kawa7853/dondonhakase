@@ -39,7 +39,12 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    s = "やん？"
+    r = "やん？"
+
+    if msg == "ドンドン博士":
+        r = "やん！"
+    elif msg == "今田美桜":
+        r = "かわいい、セックスしたい！"
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text = s))
