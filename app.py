@@ -47,6 +47,7 @@ def handle_message(event):
         r = "かわいい、セックスしたい！"
     elif msg in == ["hi", "Hi"]:
         r = "やん〜"
+    
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text = r))
