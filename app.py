@@ -41,7 +41,9 @@ def handle_message(event):
     msg = event.message.text
     r = "やん？"
 
-    if msg == "ドンドン博士":
+    if msg in ["hi", "Hi"]:
+        r = "やん〜"
+    elif msg == "ドンドン博士":
         r = "やん！"
     elif msg == "今田美桜":
         r = "かわいい、セックスしたい！"
